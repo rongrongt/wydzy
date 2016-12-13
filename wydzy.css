@@ -13,6 +13,9 @@
 .cont-job{
 	flex:0 0 auto;
 }
+.cont-job .go-job{
+	color:#21a557;
+}
 .job-blank{
 	flex: 1 1 0;
 }
@@ -64,7 +67,7 @@
 
 }
 .edu-produce .pro-gz{
-	display: inline-block;
+	display:none;
 	width:55px;
 	height: 22px;
 	line-height: 22px;
@@ -77,54 +80,88 @@
 
 	margin:0px 15px 0 15px;
 }
+.edu-produce  .post-has{
+	display: none;
+	background: #999;
+	border:1px solid #777;
+	line-height: 16px;
+	margin:0 15px;
+}
 .edu-list{
 	float: right;
 	font-size:16px;
 
 }
+
 .edu-list li{
 	margin-left: 50px;
+}
+.edu-list .edli-from{
+	display: inline-block;
+	line-height: 14px;
+
+}
+.edli-from .edli-big-input{
+	position:absolute;
+	width: 80px;
+	display: none;
 }
 .edu-list .edli-big{
 	width: 25px;
 	height: 25px;
 	background: url(wyimg/wysma.png) 0px -36px;
 	vertical-align: -3px;
-	margin-left: 30px;
+	border:none;
+	margin-left: 90px;
+
 }
 
 .slider-banner{
 	height:460px;
-	background: pink;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	
+}
+.slider-banner div{
+	height:460px;
+	width: 100%;
+	position:absolute;
+	overflow: hidden;
+	transition: left 0.5s;
 }
 
-.course-wrap-box .open-cours-img1{
+.open-cours-img{
 	width:85px;
 	height: 81px;
 	
-	display: inline-block;
-	vertical-align: top;
+	float: left;
+	
 	margin:5px 10px 0  0 ;
+}
+.course-wrap-box .open-cours-img1{
+	
 	background: url(wyimg/wysma.png) 0 -90px;
 }
 .course-wrap-box .open-cours-img2{
-	width:85px;
-	height: 81px;
-	display: inline-block;
+	
 	background: url(wyimg/wysma.png) 0 -171px;
 }
 .course-wrap-box .open-cours-img3{
-	width:85px;
-	height: 81px;
-	display: inline-block;
+	
 	background: url(wyimg/wysma.png) 0 -250px;
 }
 
+.course-wrap-wrap{
+	background: #fff;
+	padding: 60px 0 40px ;
+}
 .course-wrap{
 	background: #fff;
 	width: 1200px;
 	font-size:14px;
-	margin:60px auto;
+	margin:0px auto;
+
 	text-align: justify;
 }
 .course-wrap:after{
@@ -144,6 +181,7 @@
 .course-wrap-box .course-wrap-right{
 	display: inline-block;
 	width:245px;
+	float:right;
 }
 
 .course-wrap-right h4{
@@ -154,7 +192,306 @@
 }
 .course-wrap-right p{
 	line-height: 25px;
+	margin-bottom:35px;
 }
+.course-wrap-right .learn-more{
+	color:#21a557;
+	
+}
+
+.course-wrap-right .learn-more:hover{
+	text-decoration: underline;
+
+}
+.img-showss{
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.produce-bbig-wrap{
+	width:1205px;
+	display: flex;
+	margin:80px auto;	
+}
+.produce-bbig-wrap .produce-desi{
+	flex:0 0 auto;
+	width: 960px;
+}
+.produce-bbig-wrap .produce-a1{
+	flex:1 1 0;
+
+}
+
+
+.pro-class .current{
+	background: #21a557;
+	color:#fff;
+}
+
+.produce-bbig-wrap .produce-desi-box{
+	width: 960px;
+	margin: 10px 0 100px;
+	text-align: justify;
+}
+.produce-bbig-wrap .produce-desi-box:after{
+	display: inline-block;
+	content: "";
+	height: 0;
+	width: 100%;
+}
+.pro-class a{
+	display: inline-block;
+	width:200px;
+	height:45px;
+	font-size:22px;
+	text-align: center;
+	line-height: 45px;
+	box-shadow: 0.5px 0.5px #888888;
+}
+
+.produce-desi-box .des-one-of{
+	display: inline-block;
+	width:223px;
+	height:225px;
+	font-size:12px;
+	line-height: 22px;
+	margin-top:20px;
+	box-shadow: 0.5px 0.5px #888888;
+	overflow: hidden;
+	background: #fff;
+
+}
+.des-one-of .desof-cover{
+	width:223px;
+	overflow: hidden;
+	height: 125px;
+}
+
+.des-one-of .desof-cover img{
+	max-width: 223px;
+}
+
+.des-one-of .noe-of-itr{
+	padding: 0 5px;
+}
+.noe-of-itr .des-kinds{
+	display: block;
+	color:#999;
+}
+.noe-of-itr .des-buzz{
+	color:#999;
+	border:0.5px solid #999;
+	
+	width:40px;
+	padding: 0 3px;
+	line-height: 16px;
+	vertical-align: middle;
+	border-radius: 15%;
+	display: block;
+	margin: 5px 0;
+}
+.rent{
+	background: url(wyimg/rent.png);
+	display:inline-block;
+	width: 10px;
+	height: 10px;
+	margin-right: 5px;
+
+}
+.produce-desi-box .des-title{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	margin: 0;
+	font-size: 12px;
+}
+.produce-desi-box .des-title a:hover{
+	color:#39a330;
+}
+.des-one-of .des-price{
+	color:red;
+
+}
+
+.produce-bbig-wrap .produce-sider{
+	flex:0 0 auto;
+	width:225px;
+	height: 1025px;
+	font-size:14px;
+	
+}
+
+.produce-sider .s-sider-top{
+	background:#fff; 
+}
+
+
+
+
+.s-prci-h,
+.s-hot-h{
+	margin:0;
+	font-size:16px;
+	line-height: 55px;
+	padding:0 20px;
+	
+	box-shadow: 0.5px 0.5px #888;
+}
+.s-sider-top .s-pr-video{
+	padding: 20px;
+	box-shadow: 0.5px 0.5px #888;
+}
+.s-pr-video .s-watch{
+	margin:0;
+	padding: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+.s-pr-video .s-video-a{
+	width:180px;
+	height:110px;
+	margin-top:5px;
+	
+
+}
+
+.s-pr-video .video-wrap-mask{
+	position: fixed;
+	text-align: center;
+	background: #000000;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0.5;
+	display: none;
+}
+
+.s-pr-video .video-wrap{
+	position: fixed;
+	text-align: center;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: none;
+}
+.video-wrap .video-align{
+	display: inline-block;
+	width: 1px;
+	height: 100%;
+	vertical-align: middle;
+}
+.video-wrap .video-pad{
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	text-align: left;
+	background: #fff;
+	width:890px;
+	height: 540px;
+	font-size:16px;
+	padding: 30px;
+}
+.video-wrap .ship-xx{
+	display: inline-block;
+	width: 15px;
+	height:15px;
+	background: url(wyimg/wysma.png) -1px -1px;
+	position: absolute;
+	right: 20px;
+	top:20px;
+}
+.video-wrap .viedeoo{
+	
+	width:890px;
+	height: 540px;
+}
+.produce-sider .s-sider-bottom{
+	margin-top:20px;
+	background: #fff;
+	box-shadow: 0.5px 0.5px #888;
+	height: 780px;
+}
+
+.s-sider-bottom .chart-list{
+	padding: 0 20px 20px;
+}
+ .chart-list .hot-branch{
+ 	width:185px;
+ 	height:50px;
+ 	margin-top:20px;
+ }
+.hot-branch .hbranch-img{
+	width:50px;
+	height: 50px;
+	overflow: hidden;
+	float: left;
+	margin-right: 10px;
+}
+.hot-branch .ch-list-name{
+	display: inline-block;
+	margin:0;
+
+	width:120px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+.ch-list-name a{
+	font-size:14px;
+}
+.hot-branch .ch-list-box{
+	
+
+}
+.ch-list-box .s-renq{
+	font-size:12px;
+	line-height: 40px;
+	color:#999;
+}
+
+#page-box .pro-page{
+	float: right;
+	margin-top:30px;
+}
+.pro-page a{
+	text-align: center;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+}
+.pro-page a:hover{
+	background: #9dd8b1;
+	color:#fff;
+}
+
+.pro-page a.current{
+	color: #9dd8b1;
+}	
+
+.pro-page .page-jt{
+	display: inline-block;
+	width:30px;
+	height:20px;
+
+	background: #9dd8b1;
+	color:#fff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

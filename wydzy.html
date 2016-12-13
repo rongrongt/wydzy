@@ -1,4 +1,4 @@
-<!doctype.html>
+<!doctype html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -6,13 +6,15 @@
 	<link rel="stylesheet" href="wydzyb.css">
 	<link rel="stylesheet" href="wydzy.css">
 	<script src="wydzy.js"></script>
+	<script src="wydzypage.js"></script>
+	<script src="wydzylist.js"></script>
+	<script src="emitter.js"></script>
+	<script src="category.js"></script>
+	<script src="wyslider.js"></script>
 </head>
 <body>
 
-<div id="notice">
-	<span id="close">X</span>
-	通知
-</div>
+
 	<div id="job-box">
 		<div class="job-box" >
 			<div class="cont-job">
@@ -30,14 +32,10 @@
 			<ul class="edu-head">
 				<li class="edu-pro-co-mg" ></li>
 				<li class="edu-pro-co">网易教育产品部</li>
-				<li class="pro-group">
-					<span class="pro-gz">+关注</span>
-					<span class="pro-fan">粉丝</span>
-					<span class="pro-ary">33</span>
-				</li>
-				<li style="display: none">
-					<span>
-						<i class="pro-gz-post">已关注</i>|
+				<li class="pro-group" >
+					<span class="pro-gz" id="pro-group">+关注</span>
+					<span class="post-has" id="post-has">
+						<i class="pro-gz-post" id="pro-gz-post">已关注</i>|
 						<i class="pro-cancel">取消</i>
 					</span>
 					<span class="pro-fan">粉丝</span>
@@ -61,50 +59,195 @@
 					<a href="http://www.icourse163.org/" target="_blank">中国大学MOOC
 					</a>
 				</li>
-				<li class="edli-big"></li>
+				<form action="" class="edli-from">
+					<input type="text" class="edli-big-input">
+					<button class="edli-big"></button> 
+				</form>
+
 			</ul>
 		</div>
 	</div>
-	<div class="slider-banner">
+	<div class="slider-banner" id="slider-banner">
 		
 	</div>
-	<div class="course-wrap">
-		<div class="course-wrap-box">
-			<div class="open-cours-img1"></div>
-			<div class="course-wrap-right">
-				<h4>
-					网易公开课
-				</h4>
-				<p>推出全国内外名校公开课科，名校老手认真视频红开课频道搭建视屏教学平台名校回到合肥的回复而符合或复合底方法否认王菲</p>
-				<a href="">了解更多></a>
+	<div class="course-wrap-wrap">
+		<div class="course-wrap">
+			<div class="course-wrap-box">
+				<div class="open-cours-img1 open-cours-img"></div>
+				<div class="course-wrap-right">
+					<h4>
+						网易公开课
+					</h4>
+					<p>推出全国内外名校公开课科，名校老手认真视频红开课频道搭建视屏教学平台名校回到合肥的回复而符合或复合底方法否认王菲</p>
+					<a href="" class="learn-more" target="_blank">了解更多></a>
+				</div>
 			</div>
-		</div>
-		<div class="course-wrap-box">
-			<div class="open-cours-img2"></div>
-			<div class="course-wrap-right">
-				<h4>
-					云课堂
-				</h4>
-				<p>推出全国内外名校公开课科，名校老手认真视频红开课频道搭建视屏教学平台名校回到合肥的回复而符合或复合发的随时奉节</p>
-				<a href="">了解更多></a>
+			<div class="course-wrap-box">
+				<div class="open-cours-img2 open-cours-img"></div>
+				<div class="course-wrap-right">
+					<h4>
+						云课堂
+					</h4>
+					<p>推出全国内外名校公开课科，名校老手认真视频红开课频道搭建视屏教学平台名校回到合肥的回复而符合或复合发的随时奉节</p>
+					<a href="" class="learn-more" target="_blank">了解更多></a>
+				</div>
+				
 			</div>
-			
-		</div>
-		<div class="course-wrap-box">
-			<div class="open-cours-img3"></div>
-			<div class="course-wrap-right">
-				<h4>
-					中国大学MOOC
-				</h4>
-				<p>推出全国内外名校公开课科，名校老手认真视频红开课频道搭建视屏教学平台名校回到合肥的回复而符合或复合底法人和防患未然烦人</p>
-				<a href="">了解更多></a>
+			<div class="course-wrap-box">
+				<div class="open-cours-img3 open-cours-img"></div>
+				<div class="course-wrap-right">
+					<h4>
+						中国大学MOOC
+					</h4>
+					<p>推出全国内外名校公开课科，名校老手认真视频红开课频道搭建视屏教学平台名校回到合肥的回复而符合或复合底法人和防患未然烦人</p>
+					<a href="" class="learn-more" target="_blank">了解更多></a>
+				</div>
 			</div>
 		</div>
 	</div>
+	<div class="img-showss">
+		<img src="wyimg/ggd1.jpg" alt="">
+		<img src="wyimg/ggd1.jpg" alt="">
+		<img src="wyimg/ggd1.jpg" alt="">
+		<img src="wyimg/ggd1.jpg" alt="">
+		
+	</div>
+	<div class="produce-bbig-wrap">
+		<div class="produce-desi">
+			<div class="pro-class" id="pro-class">
+			</div>
+			<div class="produce-desi-box" id="produce-desi-box">
+
+			</div>
+			<div id="page-box" class="page-box">
+			</div>	
+		</div>
+		<div class="produce-a1"></div>
 
 
+		<div class="produce-sider">
+			<div class="s-sider-top">
+				<h4 class="s-prci-h">机构介绍</h4>
+				<div class="s-pr-video">
+					<p class="s-watch">观看下面的视频来了解吧：</p>
+					<a href="#video-wrap" class="s-video-a">
+						<img src="wyimg/ship.jpg" alt="video">
+					</a>
+					<div class="video-wrap-mask">
+					</div>
+					<div class="video-wrap" id="video-wrap">
+						<div class="video-align"></div>
+						<div class="video-pad">
+							<span>请观看下面的视频：</span>
+							<i class="ship-xx"></i>
+							<video id="viedeoo" class="viedeoo"  controls  src="http://mov.bn.netease.com/open-movie/nos/mp4/2014/12/30/SADQ86F5S_shd.mp4" >您的浏览器不支持viedeo播放</video>
+						</div>
+					</div>
+					
+				</div>
+			</div>
 
+			<div class="s-sider-bottom">
+				<div>
+					<h4 class="s-hot-h">最热排行榜</h4>
+				</div>
+				<div class="chart-list">
+					<div class="hot-branch">
+						<div class="hbranch-img">
+							<a href="">
+								<img src="wyimg/slider.jpg" alt="">
+							</a>
+						</div>
+						<div class="ch-list-box">
+							<h6 class="ch-list-name">
+								<a href="" >舞曲舞曲去uquu舞曲舞曲舞曲㐏</a>
+							</h6>
+							<b class="s-renq">
+								<i class="rent"></i>21233
+							</b>
+						</div>
+					</div>
+					<div class="hot-branch">
+						<div class="hbranch-img">
+							<a href="">
+								<img src="wyimg/slider.jpg" alt="">
+							</a>
+						</div>
+						<div class="ch-list-box">
+							<h6 class="ch-list-name">
+								<a href="" >舞曲舞曲去uquu舞曲舞曲舞曲㐏</a>
+							</h6>
+							<b class="s-renq">
+								<i class="rent"></i>21233
+							</b>
+						</div>
+					</div>
+					<div class="hot-branch">
+						<div class="hbranch-img">
+							<a href="">
+								<img src="wyimg/slider.jpg" alt="">
+							</a>
+						</div>
+						<div class="ch-list-box">
+							<h6 class="ch-list-name">
+								<a href="" >舞曲舞曲去uquu舞曲舞曲舞曲㐏</a>
+							</h6>
+							<b class="s-renq">
+								<i class="rent"></i>21233
+							</b>
+						</div>
+					</div>
+					<div class="hot-branch">
+						<div class="hbranch-img">
+							<a href="">
+								<img src="wyimg/slider.jpg" alt="">
+							</a>
+						</div>
+						<div class="ch-list-box">
+							<h6 class="ch-list-name">
+								<a href="" >舞曲舞曲去uquu舞曲舞曲舞曲㐏</a>
+							</h6>
+							<b class="s-renq">
+								<i class="rent"></i>21233
+							</b>
+						</div>
+					</div>
+					<div class="hot-branch">
+						<div class="hbranch-img">
+							<a href="">
+								<img src="wyimg/slider.jpg" alt="">
+							</a>
+						</div>
+						<div class="ch-list-box">
+							<h6 class="ch-list-name">
+								<a href="" >舞曲舞曲去uquu舞曲舞曲舞曲㐏</a>
+							</h6>
+							<b class="s-renq">
+								<i class="rent"></i>21233
+							</b>
+						</div>
+					</div>
+					<div class="hot-branch">
+						<div class="hbranch-img">
+							<a href="">
+								<img src="wyimg/slider.jpg" alt="">
+							</a>
+						</div>
+						<div class="ch-list-box">
+							<h6 class="ch-list-name">
+								<a href="" >舞曲舞曲去uquu舞曲舞曲舞曲㐏</a>
+							</h6>
+							<b class="s-renq">
+								<i class="rent"></i>21233
+							</b>
+						</div>
+					</div>
 
+				</div>	
+			</div>
+		</div>
+
+	</div>
 
 
 
@@ -118,3 +261,8 @@
 
 </body>
 </html>
+
+<!--
+<div class="off-banner1"><img src="wyimg/banner1.jpg" alt=""></div>
+		<div class="off-banner2"><img src="wyimg/banner2.jpg" alt=""></div>
+		<div class="off-banner3"><img src="wyimg/banner3.jpg" alt=""></div>-->
