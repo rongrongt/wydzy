@@ -6,6 +6,7 @@ function Slider(opt){
 }
 
 
+
 Slider.prototype.render = function(){
 	var images = this.images.length;
 	str = '';
