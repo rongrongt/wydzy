@@ -127,13 +127,14 @@
 	position: absolute;
 	height:460px;
 	width: 100%;
+	transition: left 1s;
 }
 .slider-banner .off-banner{
 	height:460px;
 	width: 100%;
 	position:absolute;
 	overflow: hidden;
-	transition: left 0.5s;
+	
 }
 
 .open-cours-img{
