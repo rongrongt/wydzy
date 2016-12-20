@@ -143,10 +143,10 @@
 	position: absolute;
 	background:url(wyimg/wysma.png) -2px -1px;
 }
-.input #tipId,
-.input #tipPass,
-.input #idErr,
-.input #passErr{
+#tipID,
+#tippass,
+#idErr,
+#passErr{
 	display: none;
 	position: absolute;
 	color:red;

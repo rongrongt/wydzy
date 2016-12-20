@@ -2,7 +2,7 @@
 window.onload = function (){
 
 
-	function getCookie(name){
+	window.getCookie = function(name){
 
 		var cookiesStr = document.cookie;
 
@@ -21,7 +21,7 @@ window.onload = function (){
 	}
 
 
-	function setCookie(name,value){
+	window.setCookie = function(name,value){
 		document.cookie = name+'='+value;
 	} 
 
