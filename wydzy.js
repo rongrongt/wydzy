@@ -23,41 +23,48 @@ window.onload = function (){
 
 	function setCookie(name,value){
 		document.cookie = name+'='+value;
+	} 
+
+	function tipsNew(){
+		var tipsClose = getCookie('close');
+		var progz = getCookie('cFocus');
+
+		if(tipsClose != 'y'){
+
+			document.getElementById('job-box').style.display='block';
+
+			document.getElementById('dele-tip-close').addEventListener('click',function(){
+				1
+				setCookie('close','y');
+				document.getElementById('job-box').style.display='none';	
+			},false);
+		}else if(tipsClose == 'y'){
+			document.getElementById('job-box').style.display='none';
+
+		}
 	}
+	tipsNew();
 
 
-	var tipsClose = getCookie('close');
-	var progz = getCookie('cFocus');
 
-	if(tipsClose != 'y'){
+	// if(progz != 'post'){
 
-		document.getElementById('job-box').style.display='block';
+	// 	document.getElementById('pro-group').style.display='inline-block';
 
-		document.getElementById('dele-tip-close').addEventListener('click',function(){
-			setCookie('close','y');
-			document.getElementById('job-box').style.display='none';	
-		},false);
-	}else if(tipsClose == 'y'){
-		document.getElementById('job-box').style.display='none';
-
-	}
-
-	if(progz != 'post'){
-
-		document.getElementById('pro-group').style.display='inline-block';
-
-		document.getElementById('pro-group').addEventListener('click',function(){
-			setCookie('cFocus','post');
-			document.getElementById('pro-group').style.display='none';
-		document.getElementById('post-has').style.display='inline-block';	
-		},false);
-	}else if(progz == 'post'){
-		document.getElementById('pro-group').style.display='none';
-		document.getElementById('post-has').style.display='inline-block';
+	// 	document.getElementById('pro-group').addEventListener('click',function(){
+	// 		setCookie('cFocus','post');
+	// 		document.getElementById('pro-group').style.display='none';
+	// 	document.getElementById('post-has').style.display='inline-block';	
+	// 	},false);
+	// }else if(progz == 'post'){
+	// 	document.getElementById('pro-group').style.display='none';
+	// 	document.getElementById('post-has').style.display='inline-block';
 
 
-	}
-	
+	// }
+	var login = new Login({
+		url:'bdehfe'
+	})
 
 
 	var page = new Page({
@@ -99,7 +106,8 @@ window.onload = function (){
 	var slider = new Slider({
 		images:['wyimg/banner1.jpg',
 				'wyimg/banner2.jpg',
-				'wyimg/banner3.jpg'
+				'wyimg/banner3.jpg',
+				'wyimg/05.jpg'
 				],
 		container:document.getElementById('slider-banner'),
 
@@ -108,10 +116,6 @@ window.onload = function (){
 	
 }//
 
-		
-
-
-	
 
 
   		

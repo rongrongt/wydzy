@@ -67,11 +67,11 @@
 
 }
 .edu-produce .pro-gz{
-	display:none;
+	
 	width:55px;
 	height: 22px;
 	line-height: 22px;
-	
+	padding: 5px;
 	background: #21a557;
 	color:#fff;
 	text-align: center;
@@ -80,6 +80,79 @@
 
 	margin:0px 15px 0 15px;
 }
+#pro-none-login{
+	display: none;
+	position: fixed;
+	top:0;
+	left:0;
+	bottom: 0;
+	right:0;
+	margin:auto;
+	width:300px;
+	padding: 0 20px;
+	height:250px;
+	z-index: 9;
+	background: #fff;
+	
+}
+
+#edu-login{
+	position: relative;
+	display: inline-block;
+	text-align: left;
+	
+	line-height:40px;
+	font-size:18px;
+	background: #fff;
+}
+#edu-login div{
+	
+	height:45px;
+	margin:10px auto;
+}
+#edu-login .wy-hh{
+	line-height: 45px;
+}
+#edu-login .input{
+	width:296px;
+	height:45px;
+	padding:0;
+	outline: none;
+}
+
+#edu-login .btn-login-box{
+	text-align: center;
+	background: #21a557;
+
+}
+#edu-login .btn-login{
+	outline: none;
+	font-size:16px;
+	background: #21a557;
+	border:none;
+	color:#fff;
+}
+#edu-login .login-xx{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	top:10px;
+	right:10px;
+	margin-right: 2px;
+	margin-top:2px;
+	position: absolute;
+	background:url(wyimg/wysma.png) -2px -1px;
+}
+.input #tipId,
+.input #tipPass,
+.input #idErr,
+.input #passErr{
+	display: none;
+	position: absolute;
+	color:red;
+
+}
+
 .edu-produce  .post-has{
 	display: none;
 	background: #999;
@@ -127,13 +200,14 @@
 	position: absolute;
 	height:460px;
 	width: 100%;
-	transition: left 1s;
+	transition: left 0.5s;
 }
 .slider-banner .off-banner{
 	height:460px;
 	width: 100%;
 	position:absolute;
 	overflow: hidden;
+
 	
 }
 

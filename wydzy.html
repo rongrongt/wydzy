@@ -11,10 +11,12 @@
 	<script src="emitter.js"></script>
 	<script src="category.js"></script>
 	<script src="wyslider.js"></script>
+	<script src="require.js"></script>
+	<script src="wylogin.js"></script>
 </head>
 <body>
 
-
+	
 	<div id="job-box">
 		<div class="job-box" >
 			<div class="cont-job">
@@ -39,7 +41,31 @@
 						<i class="pro-cancel">取消</i>
 					</span>
 					<span class="pro-fan">粉丝</span>
-					<span class="pro-ary">33</span>
+					<span class="pro-ary" id="pro-ary">33</span>
+				</li>
+				<li id="pro-none-login">
+					<form action="" id="edu-login">
+						<div>
+							<label for="" class="wy-hh">网易云课堂</label>
+						</div>
+						
+						<div>
+							
+							<input name="name" type="text" placeholder="账号" class="input" id="wy-id">
+							<a id="tipID" >请输入网易邮箱</a>
+							<a href="" id="idErr">邮箱不合法</a>
+						</div>
+						<div>
+							
+							<input type="password" name="passwprd" placeholder="密码" class="input" id="wy-password">
+							<a id="tippass">请输入密码</a>
+							<a href="" id="passErr">密码错误</a>
+						</div>
+						<div class="btn-login-box">
+							<button type="submit"  class="btn-login">登录</button>
+						</div>
+						<i class="login-xx" id="login-xx"></i>
+					</form>
 				</li>
 			</ul>
 
